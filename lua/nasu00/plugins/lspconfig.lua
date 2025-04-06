@@ -217,6 +217,20 @@ return {
 			-- But for many setups, the LSP (`ts_ls`) will work just fine
 			-- ts_ls = {},
 			--
+			--
+			--
+			-- denols = {
+			-- 	deno = {
+			-- 		enable = true,
+			-- 		suggest = {
+			-- 			imports = {
+			-- 				hosts = {
+			-- 					["https://deno.land"] = true,
+			-- 				},
+			-- 			},
+			-- 		},
+			-- 	},
+			-- },
 
 			lua_ls = {
 				--Error of "Undefined global vim fixed"
