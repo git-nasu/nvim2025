@@ -14,6 +14,7 @@ vim.g.localmapleader = " "
 -- visual_block_mode 'x'
 -- term_mode 't'
 -- command_mode 'c'
+--
 
 -- Do not yank with x
 keymap.set("n", "x", '"_x')
