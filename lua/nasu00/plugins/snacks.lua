@@ -4,12 +4,15 @@ return {
 	lazy = false,
 	---@type snacks.Config
 	opts = {
-		picker = { enabled = true },
+		input = { enabled = true },
+		picker = { layout = { preset = "ivy" } },
 		explorer = { enabled = true },
 		notifier = {
 			enabled = true,
 			timeout = 3000,
 		},
+		notify = { enabled = true },
+		indent = { enabled = true },
 	},
 	keys = {
 		-- Top Pickers & Explorer
