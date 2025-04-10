@@ -5,8 +5,12 @@ return {
 	---@type snacks.Config
 	opts = {
 		input = { enabled = true },
-		picker = { layout = { preset = "ivy" } },
-		explorer = { enabled = true },
+		picker = {
+			layout = { preset = "ivy" },
+			sources = {
+				explorer = { hidden = true, auto_close = true },
+			},
+		},
 		notifier = {
 			enabled = true,
 			timeout = 3000,
@@ -23,13 +27,13 @@ return {
 			end,
 			desc = "Smart Find Files",
 		},
-		{
-			"<leader>,",
-			function()
-				Snacks.picker.buffers()
-			end,
-			desc = "Buffers",
-		},
+		-- {
+		-- 	"<leader>,",
+		-- 	function()
+		-- 		Snacks.picker.buffers()
+		-- 	end,
+		-- 	desc = "Buffers",
+		-- },
 		{
 			"<leader>/",
 			function()
