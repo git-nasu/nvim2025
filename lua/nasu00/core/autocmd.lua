@@ -6,15 +6,15 @@ local autocmd = vim.api.nvim_create_autocmd --Create autocommand
 
 --Remove whitespace on save
 autocmd("BufWritePre", {
-	pattern = "*",
-	command = ":%s/\\s\\+$//e",
+  pattern = "*",
+  command = ":%s/\\s\\+$//e",
 })
 
 --Don't auto commenting on save
 
 autocmd("BufEnter", {
-	pattern = "*",
-	command = "set fo-=c fo-=r fo-=o", -- fo='formationoptions'
+  pattern = "*",
+  command = "set fo-=c fo-=r fo-=o", -- fo='formationoptions'
 })
 
 --Disable the concealing in some file formats
@@ -25,3 +25,4 @@ autocmd("BufEnter", {
 --     vim.wo.conceallevel = 0
 --   end,
 -- })
+--
