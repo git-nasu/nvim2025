@@ -2,14 +2,43 @@ return {
   "folke/noice.nvim",
   event = "VeryLazy",
   opts = {
-    -- add any options here
-  },
-  dependencies = {
-    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
-    "MunifTanjim/nui.nvim",
-    -- OPTIONAL:
-    --   `nvim-notify` is only needed, if you want to use the notification view.
-    --   If not available, we use `mini` as the fallback
-    "rcarriga/nvim-notify",
+    message = {
+      enabled = true, -- enables the Noice messages UI
+      view = "mini", -- default view for messages
+      view_error = "mini", -- view for errors
+      view_warn = "mini", -- view for warnings
+      view_history = "mini", -- view for :messages
+      view_search = "mini", -- view for search count messages. Set to `false` to disable
+    },
+    notify = {
+      enabled = true,
+      view = "mini",
+    },
+    lsp = {
+      message = {
+        enabled = true,
+        view = "mini",
+      },
+    },
+    views = {
+      -- This sets the position for the search popup that shows up with / or with :
+      cmdline_popup = {
+        position = {
+          row = "15%",
+          col = "50%",
+        },
+      },
+      mini = {
+        -- timeout = 5000 , --timeout in milliseconds
+        timeout = vim.g.neovim_mode == "skitty" and 2000 or 5000,
+        align = "center",
+        position = {
+          -- Centers messages top to bottom
+          row = "95%",
+          -- Aligns messages to the for right
+          col = "100%",
+        },
+      },
+    },
   },
 }
