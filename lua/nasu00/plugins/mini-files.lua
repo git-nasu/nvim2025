@@ -1,6 +1,9 @@
 return {
   "echasnovski/mini.files",
   opts = {
+    mappings = {
+      go_in_plus = "<CR>",
+    },
     windows = {
       preview = true,
       width_focus = 30,

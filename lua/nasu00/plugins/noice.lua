@@ -38,6 +38,9 @@ return {
           -- Aligns messages to the for right
           col = "100%",
         },
+        win_options = {
+          winblend = 0,
+        },
       },
     },
   },
