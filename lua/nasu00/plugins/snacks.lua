@@ -7,9 +7,9 @@ return {
     input = { enabled = true },
     picker = {
       layout = { preset = "ivy" },
-      sources = {
-        explorer = { hidden = true, auto_close = true },
-      },
+      -- sources = {
+      --   explorer = { hidden = true, auto_close = true },
+      -- },
     },
     -- notifier = {
     -- 	enabled = true,
@@ -55,13 +55,13 @@ return {
       end,
       desc = "Notification History",
     },
-    {
-      "<leader>ee",
-      function()
-        Snacks.explorer()
-      end,
-      desc = "File Explorer",
-    },
+    -- {
+    --   "<leader>ee",
+    --   function()
+    --     Snacks.explorer()
+    --   end,
+    --   desc = "File Explorer",
+    -- },
     -- find
     {
       "<leader>fb",

@@ -24,7 +24,7 @@ return {
       -- This sets the position for the search popup that shows up with / or with :
       cmdline_popup = {
         position = {
-          row = "15%",
+          row = "40%",
           col = "50%",
         },
       },
