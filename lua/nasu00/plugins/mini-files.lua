@@ -3,6 +3,9 @@ return {
   opts = {
     mappings = {
       go_in_plus = "<CR>",
+      synchronize = "s",
+      trim_left = "<",
+      trim_right = ">",
     },
     windows = {
       preview = true,
